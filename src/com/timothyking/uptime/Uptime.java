@@ -19,9 +19,8 @@ public class Uptime extends Activity {
         float secs = SystemClock.elapsedRealtime()/1000;
         float hours = (secs/60)/60;
         float days = hours/24;
-        //float hours = ((SystemClock.elapsedRealtime()/1000)/60)/60;
         
         DecimalFormat df = new DecimalFormat("#####.##");
-        tv.setText(df.format(hours) + " hours\nOr\n" + df.format(days) + " days");
+        tv.setText(df.format(days) + " days\nOr\n" + df.format(hours) + " hours");
     }
 }
